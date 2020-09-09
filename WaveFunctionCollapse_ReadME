@@ -1,0 +1,13 @@
+This application is a test of a newer random generation algorithm known as Wave Function Collapse.  
+
+OVERVIEW:
+-Essentially the algorithm superimposes a set of cells, usually on a grid, into a quantum state of being all possible values from a truth table.
+-The grid then randomly chooses a starting cell and randomly collapses it into one of its valid values from the list of possible values.
+-After a value is chosen, adjacent cells have their possible value lists limited based on adjacency rules specified in the truth table and their entropy value updated accordingly.
+-The next cell chosen will be the one with the lowest entropy score, then the previous step is repeated.
+-This goes on until each cell on the grid has only one value.
+
+HOW TO USE:
+-This application generates a simple geographic  map at random using this algorithm, the values L, C, and O correspond to Land, Coast, and Ocean respectively.
+-Just click the Generate button and watch the grid collapse and start coloring the cells like land, coast, or ocean
+-Notice how based on the truth table, you will never see land directly next to ocean, it always has a coastal buffer.
